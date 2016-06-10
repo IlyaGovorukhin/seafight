@@ -3,7 +3,7 @@
 /* --------- adjustment --------- */
 
 @container-width    : 1264px;
-@footer-height      : 201px;
+@footer-height      : 200px;
 @body-font          : Arial, Helvetica, sans-serif;
 
 /* --------- base --------- */
@@ -19,16 +19,22 @@ body {
   -webkit-font-smoothing: antialiased;
   width:100%;
   height:100%;
+  background: url("../img/sea.jpg") no-repeat;
+  background-size: cover;
 
 
 }
-
+.container {
+  position: relative;
+  height: 100%;
+  width: @container-width;
+  margin: 0 auto;
+}
 
 
 .wrapper {
   position: relative;
   min-height: 100%;
-  height: auto !important;
   height: 100%;
   overflow: hidden;
   min-width: @container-width + 20;
